@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="elementary_fighter_2d" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/elementary_fighter_2d" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="D:/Libraries/allegro-5.1.8-mingw-4.7.0/lib/liballegro-5.1.8-monolith-mt-debug.a" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/elementary_fighter_2d" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="D:/Libraries/allegro-5.1.8-mingw-4.7.0/lib/liballegro-5.1.8-monolith-mt.a" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="D:/Libraries/allegro-5.1.8-mingw-4.7.0/include" />
+		</Compiler>
+		<Linker>
+			<Add directory="D:/Libraries/allegro-5.1.8-mingw-4.7.0/lib" />
+		</Linker>
+		<Unit filename="free_functions.cpp" />
+		<Unit filename="headers.hpp" />
+		<Unit filename="hero_functions.cpp" />
+		<Unit filename="location_functions.cpp" />
+		<Unit filename="main.cpp" />
+		<Unit filename="portrait_functions.cpp" />
+		<Unit filename="settings_functions.cpp" />
+		<Unit filename="text_functions.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
